@@ -82,7 +82,7 @@ searchButton.addEventListener('click', async () => {
             // tu codigo aqui: realiza una solicitud para buscar películas
 
             
-            const response = await fetch(`${apiUrl}/search/movie?api_key=${apiKey}&query=${query}`);
+            const response = await fetch(`${apiUrl}/search/movie?query=${query}&api_key=${apiKey}`);
             const data = await response.json();
 
 
